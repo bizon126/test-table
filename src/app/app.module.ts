@@ -8,11 +8,15 @@ import {MatInputModule} from "@angular/material/input";
 import {MatTableModule} from "@angular/material/table";
 import {MatSortModule} from "@angular/material/sort";
 import {NoopAnimationsModule} from "@angular/platform-browser/animations";
+import { AppStartPageComponent } from './app-start-page/app-start-page.component';
+import {MatButtonModule} from "@angular/material/button";
+import {OverlayModule} from "@angular/cdk/overlay";
 
 @NgModule({
   declarations: [
     AppComponent,
-    AppTabeComponent
+    AppTabeComponent,
+    AppStartPageComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +24,9 @@ import {NoopAnimationsModule} from "@angular/platform-browser/animations";
     MatInputModule,
     MatTableModule,
     MatSortModule,
-    NoopAnimationsModule
+    NoopAnimationsModule,
+    MatButtonModule,
+    OverlayModule
   ],
   providers: [],
   bootstrap: [AppComponent]
